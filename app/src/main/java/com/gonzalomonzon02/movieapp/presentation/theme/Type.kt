@@ -1,4 +1,4 @@
-package com.gonzalomonzon02.movieapp.ui.theme
+package com.gonzalomonzon02.movieapp.presentation.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

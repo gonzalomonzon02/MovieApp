@@ -1,4 +1,4 @@
-package com.gonzalomonzon02.movieapp.ui.theme
+package com.gonzalomonzon02.movieapp.presentation.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

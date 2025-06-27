@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">MovieApp</string>
+
+    <!-- Main Screen -->
+    <string name="movies">Movies</string>
+    <string name="search_movies">Search movies…</string>
+    <string name="refresh">Refresh</string>
+    <string name="retry">Retry</string>
+    <string name="no_movies_found">No movies found</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="error_loading">Error loading more</string>
+
+    <!-- Sort Options -->
+    <string name="sort_by">Sort by</string>
+    <string name="no_sort">No sort</string>
+    <string name="popularity">Popularity</string>
+    <string name="rating">Rating</string>
+    <string name="release_date">Release date</string>
+    <string name="title_az">Title A-Z</string>
+
+    <!-- Movie Detail Screen -->
+    <string name="score">Score</string>
+    <string name="related_movies">Related movies</string>
+    <string name="no_description">No description</string>
+    <string name="movie_load_error">Could not load movie</string>
+
 </resources>

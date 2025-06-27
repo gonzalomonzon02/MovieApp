@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+
+    <!-- Main Screen -->
+    <string name="movies">Películas</string>
+    <string name="search_movies">Buscar películas…</string>
+    <string name="refresh">Refrescar</string>
+    <string name="retry">Reintentar</string>
+    <string name="no_movies_found">No se encontraron películas</string>
+    <string name="unknown_error">Error desconocido</string>
+    <string name="error_loading">Error al cargar más</string>
+
+    <!-- Sort Options -->
+    <string name="sort_by">Ordenar por</string>
+    <string name="no_sort">Sin orden</string>
+    <string name="popularity">Popularidad</string>
+    <string name="rating">Calificación</string>
+    <string name="release_date">Fecha de lanzamiento</string>
+    <string name="title_az">Título A-Z</string>
+
+    <!-- Movie Detail Screen -->
+    <string name="score">Puntaje</string>
+    <string name="related_movies">Películas relacionadas</string>
+    <string name="no_description">Sin descripción</string>
+    <string name="movie_load_error">No se pudo cargar la película</string>
+
+</resources> 
