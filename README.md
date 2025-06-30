@@ -227,7 +227,7 @@ The project uses **GitHub Actions** for automated CI/CD with the following workf
 - **Deployment Ready**: Automated build artifacts
 
 ## 📊 Project Metrics
-
+ 
 - **Lines of Code**: ~2,000+ lines of Kotlin
 - **Files**: 50+ organized files
 - **Dependencies**: 20+ modern libraries
