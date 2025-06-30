@@ -57,11 +57,12 @@ android {
                 "IMAGE_URL",
                 "\"https://image.tmdb.org/t/p/w500\""
             )
+            val tmdbApiKey = getPropertyFromAllPropertiesFiles("TMDB_API_KEY")
 
             buildConfigField(
                 "String",
                 "TMDB_API_KEY",
-                "\"${getPropertyFromAllPropertiesFiles("TMDB_API_KEY")}\""
+                "\"$tmdbApiKey\""
             )
         }
     }
@@ -96,8 +97,11 @@ dependencies {
 }
 
 fun getPropertyFromAllPropertiesFiles(key: String): String {
-    val properties = Properties()
+    // 1. First try to get from environment variable (CI/CD GitHub Actions)
+    System.getenv(key)?.let { return it }
 
+    // 2. If it's not there, try searching in the root .properties files.
+    val properties = Properties()
     rootProject.projectDir.listFiles { file ->
         file.isFile && file.name.endsWith(".properties")
     }?.forEach { file ->
@@ -106,6 +110,7 @@ fun getPropertyFromAllPropertiesFiles(key: String): String {
         }
     }
 
+    // 3. Return if found, or throw an error if not
     return properties.getProperty(key)
-        ?: error("Property $key not found in any .properties file in project root")
+        ?: error("Property $key not found in environment variables or any .properties file in project root")
 }
