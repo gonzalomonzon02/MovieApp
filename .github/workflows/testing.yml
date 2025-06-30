@@ -18,6 +18,8 @@ jobs:
 
       - name: Unit Test
         run: ./gradlew testDebugUnitTest
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
 
       - name: Android Test Report
         uses: asadmansr/android-test-report-action@v1.2.0
